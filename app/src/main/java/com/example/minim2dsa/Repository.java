@@ -57,26 +57,26 @@ public class Repository {
     private String svn_url;
     private String homepage;
     private int size;
-    private String stargazers_count;
-    private String watchers_count;
+    private int stargazers_count;
+    private int watchers_count;
     private String language;
-    private String has_issues;
-    private String has_projects;
-    private String has_downloads;
-    private String has_wiki;
-    private String has_pages;
-    private String forks_count;
+    private boolean has_issues;
+    private boolean has_projects;
+    private boolean has_downloads;
+    private boolean has_wiki;
+    private boolean has_pages;
+    private int forks_count;
     private String mirror_url;
     private boolean archived;
     private boolean disabled;
-    private boolean open_issues_count;
+    private int open_issues_count;
     private String license;
     private int forks;
     private int open_issues;
     private int watchers;
     private String default_branch;
 
-    public Repository(int id, String node_id, String name, String full_name, String privacity, Owner owner, String html_url, String description, boolean fork, String url, String forks_url, String keys_url, String collaborations_url, String team_url, String hooks_url, String issue_events_url, String events_url, String assignees_url, String branches_url, String tags_url, String blobs_url, String git_tags_url, String git_refs_url, String trees_url, String statuses_url, String languages_url, String stargazers_url, String contributors_url, String subscribers_url, String subscription_url, String commits_url, String git_commits_url, String comments_url, String issue_comment_url, String contents_url, String compare_url, String merges_url, String archive_url, String downloads_url, String issues_url, String pulls_url, String milestones_url, String notifications_url, String labels_url, String releases_url, String deployments_url, String created_at, String updated_at, String pushed_at, String git_url, String ssh_url, String clone_url, String svn_url, String homepage, int size, String stargazers_count, String watchers_count, String language, String has_issues, String has_projects, String has_downloads, String has_wiki, String has_pages, String forks_count, String mirror_url, boolean archived, boolean disabled, boolean open_issues_count, String license, int forks, int open_issues, int watchers, String default_branch) {
+    public Repository(int id, String node_id, String name, String full_name, String privacity, Owner owner, String html_url, String description, boolean fork, String url, String forks_url, String keys_url, String collaborations_url, String team_url, String hooks_url, String issue_events_url, String events_url, String assignees_url, String branches_url, String tags_url, String blobs_url, String git_tags_url, String git_refs_url, String trees_url, String statuses_url, String languages_url, String stargazers_url, String contributors_url, String subscribers_url, String subscription_url, String commits_url, String git_commits_url, String comments_url, String issue_comment_url, String contents_url, String compare_url, String merges_url, String archive_url, String downloads_url, String issues_url, String pulls_url, String milestones_url, String notifications_url, String labels_url, String releases_url, String deployments_url, String created_at, String updated_at, String pushed_at, String git_url, String ssh_url, String clone_url, String svn_url, String homepage, int size, int stargazers_count, int watchers_count, String language, boolean has_issues, boolean has_projects, boolean has_downloads, boolean has_wiki, boolean has_pages, int forks_count, String mirror_url, boolean archived, boolean disabled, int open_issues_count, String license, int forks, int open_issues, int watchers, String default_branch) {
         this.id = id;
         this.node_id = node_id;
         this.name = name;
@@ -592,19 +592,19 @@ public class Repository {
         this.size = size;
     }
 
-    public String getStargazers_count() {
+    public int getStargazers_count() {
         return stargazers_count;
     }
 
-    public void setStargazers_count(String stargazers_count) {
+    public void setStargazers_count(int stargazers_count) {
         this.stargazers_count = stargazers_count;
     }
 
-    public String getWatchers_count() {
+    public int getWatchers_count() {
         return watchers_count;
     }
 
-    public void setWatchers_count(String watchers_count) {
+    public void setWatchers_count(int watchers_count) {
         this.watchers_count = watchers_count;
     }
 
@@ -616,51 +616,51 @@ public class Repository {
         this.language = language;
     }
 
-    public String getHas_issues() {
+    public boolean isHas_issues() {
         return has_issues;
     }
 
-    public void setHas_issues(String has_issues) {
+    public void setHas_issues(boolean has_issues) {
         this.has_issues = has_issues;
     }
 
-    public String getHas_projects() {
+    public boolean isHas_projects() {
         return has_projects;
     }
 
-    public void setHas_projects(String has_projects) {
+    public void setHas_projects(boolean has_projects) {
         this.has_projects = has_projects;
     }
 
-    public String getHas_downloads() {
+    public boolean isHas_downloads() {
         return has_downloads;
     }
 
-    public void setHas_downloads(String has_downloads) {
+    public void setHas_downloads(boolean has_downloads) {
         this.has_downloads = has_downloads;
     }
 
-    public String getHas_wiki() {
+    public boolean isHas_wiki() {
         return has_wiki;
     }
 
-    public void setHas_wiki(String has_wiki) {
+    public void setHas_wiki(boolean has_wiki) {
         this.has_wiki = has_wiki;
     }
 
-    public String getHas_pages() {
+    public boolean isHas_pages() {
         return has_pages;
     }
 
-    public void setHas_pages(String has_pages) {
+    public void setHas_pages(boolean has_pages) {
         this.has_pages = has_pages;
     }
 
-    public String getForks_count() {
+    public int getForks_count() {
         return forks_count;
     }
 
-    public void setForks_count(String forks_count) {
+    public void setForks_count(int forks_count) {
         this.forks_count = forks_count;
     }
 
@@ -688,11 +688,11 @@ public class Repository {
         this.disabled = disabled;
     }
 
-    public boolean isOpen_issues_count() {
+    public int isOpen_issues_count() {
         return open_issues_count;
     }
 
-    public void setOpen_issues_count(boolean open_issues_count) {
+    public void setOpen_issues_count(int open_issues_count) {
         this.open_issues_count = open_issues_count;
     }
 

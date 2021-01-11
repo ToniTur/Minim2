@@ -62,6 +62,4 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
     public int getItemCount() {
         return listaRepos.size();
     }
-
-
 }

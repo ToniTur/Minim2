@@ -62,6 +62,7 @@
         tools:layout_editor_absoluteY="289dp" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
         android:layout_width="317dp"
         android:layout_height="427dp"
         android:layout_marginTop="308dp"
@@ -71,8 +72,14 @@
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="180dp"
-        tools:layout_editor_absoluteY="279dp" />
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="279dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginBottom="404dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
